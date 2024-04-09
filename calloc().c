@@ -1,6 +1,6 @@
 // C code of calloc() function.
-
-
+// 9 Apr 2024 10:22AM
+// Credit: Copilot
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,7 +9,7 @@ int main()
     int *arr;
     int n, i;
     
-    printf("Enter the number of elements: ");
+    printf("Size Of Array: ");
     scanf("%d", &n);//5
     
     // Dynamically allocate memory using calloc() and initialize to zero
