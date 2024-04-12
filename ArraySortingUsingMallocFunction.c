@@ -34,6 +34,7 @@
                 {
                     printf("%d ",pointer[i]);
                 }    
+            free(pointer);
             return 0;
             getch();    
         }
