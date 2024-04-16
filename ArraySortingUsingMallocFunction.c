@@ -35,6 +35,7 @@
                     printf("%d ",pointer[i]);
                 }    
             free(pointer);
-            return 0;
+           // return 0;
             getch();    
+            return 0;
         }
