@@ -2,32 +2,30 @@
 //6 Apr 20:19
 // Coded by Rakesh Swami
 #include<stdio.h>
-#include<conio.h>
+#define max 4
     int main()
         {
-            int aaru[4],i,j,temporary;
-            clrscr();
+            int arr[max],i,j,temporary;
             for(i=0;i<4;i++)
                 {
                     printf("Enter %dth Value: ",i);
-                    scanf("%d",&aaru[i]);// 4 3 2 1
+                    scanf("%d",&arr[i]);// 4 3 2 1
                 }    
-                    for(i=0;i<4;i++)
+                    for(i=0;i<max;i++)
                         {
                             for(j=i+1;j<4;j++)
                                 {
-                                    if(aaru[i]>aaru[j])
-                                        {   temporary=aaru[i];
-                                            aaru[i]=aaru[j];
-                                            aaru[j]=temporary;
+                                    if(arr[i]>arr[j])
+                                        {   temporary=arr[i];
+                                            arr[i]=arr[j];
+                                            arr[j]=temporary;
                                         }
                                 }
                         }
-                    for(i=0;i<4;i++)
+                    for(i=0;i<max;i++)
                         {
-                            printf("%d ",aaru[i]);
-                        }    
-                
-            getch();
+                            printf("%d ",arr[i]);
+                        }
+            return 0;
         }
     
