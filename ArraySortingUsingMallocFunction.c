@@ -2,13 +2,12 @@
 // 6 Apr 2024 10:39 PM
 // Coded by Rakesh Swami
 #include<stdio.h>
-#include<conio.h>
+#include<stdlib.h>
     int main()
         {
             int a,*pointer,i,in,out,temp;
-            clrscr();
             printf("Enter Size Of Array: ");
-            scanf("%d",&a);
+            scanf("%d",&a);//5
             printf("\n");
             pointer=(int*)malloc(a*sizeof(int));
             for(i=0;i<a;i++)
@@ -34,8 +33,6 @@
                 {
                     printf("%d ",pointer[i]);
                 }    
-            free(pointer);
-           // return 0;
-            getch();    
+            free(pointer); 
             return 0;
         }
