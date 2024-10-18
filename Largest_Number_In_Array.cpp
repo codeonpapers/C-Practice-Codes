@@ -1,5 +1,5 @@
 #include<stdio.h>
-void findMaxvalue(int arr[],int size);
+void findMaxvalue(int arr[],int);
 int main()
 {
     int arr[]={-1,0,1,2,3,4,5,6,7,8,9,10,10,100};
