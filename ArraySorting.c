@@ -5,24 +5,25 @@
 #define max 4
     int main()
         {
-            int arr[max],i,j,temporary;
+            int arr[max],i,j,temp;
+            int arraySize=sizeof(arr)/sizeof(arr[0]);
             for(i=0;i<4;i++)
                 {
                     printf("Enter %dth Value: ",i);
                     scanf("%d",&arr[i]);// 4 3 2 1
                 }    
-                    for(i=0;i<max;i++)
+                    for(i=0;i<arraySize;i++)
                         {
-                            for(j=i+1;j<4;j++)
+                            for(j=i+1;j<arraySize;j++)
                                 {
                                     if(arr[i]>arr[j])
-                                        {   temporary=arr[i];
+                                        {   temp=arr[i];
                                             arr[i]=arr[j];
-                                            arr[j]=temporary;
+                                            arr[j]=temp;
                                         }
                                 }
                         }
-                    for(i=0;i<max;i++)
+                    for(i=0;i<arraySize;i++)
                         {
                             printf("%d ",arr[i]);
                         }
